@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/laksh"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:background="@drawable/shap"
+        app:layout_constraintTop_toBottomOf="@id/text_dashboard"
+        android:layout_marginTop="30dp"
+        >
+
+
+        <VideoView
+            android:id="@+id/videoView1"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/playvdo"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+
+           />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ram"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/laksh"
+
+        >
+    <ScrollView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:backgroundTint="@color/white"
+                android:text="Faaslon Mein Baaghi-3 Video"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:backgroundTint="@color/white"
+                android:text="Do You Love Me Baaghi-3 Video"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                android:text="Piya More-Baadshaho" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                app:backgroundTint="@color/white"
+                android:text="Rashke Qamar-Baadshaho" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Socha Hai-Baadshaho"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                app:backgroundTint="@color/white"/>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                app:backgroundTint="@color/white"
+
+                android:text=" Phir Wahi-Jagga Jasoos" />
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                app:backgroundTint="@color/white"
+
+                android:text=" Ullu_Ka_Pattha-Jagga Jasoos" />
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                app:backgroundTint="@color/white"
+
+                android:text="Iraade-Jeena Isi Ka Naam Hai" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_outline_24"
+                app:backgroundTint="@color/white"
+                android:text=" Bawara_Mann-Jolly LLB 2" />
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <FrameLayout
+            android:id="@+id/root_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+
+            <VideoView
+                android:id="@+id/videoView1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:alpha="0"
+                android:background="@drawable/shapelogin"
+                />
+
+           Add a mask over video thumbnail with a play button icon
+
+        </FrameLayout>
+
+        <FrameLayou
+            android:id="@+id/root_container1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+
+            <VideoView
+                android:id="@+id/videoView3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:alpha="0"
+                android:background="@drawable/shapelogin"
+                />
+
+
+        </FrameLayou>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    ?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.dashboard.DashboardFragment">
+
+<TextView
+    android:id="@+id/text_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:gravity="center"
+    android:text="Streaming Videos"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<RelativeLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@+id/text_dashboard">
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0"
+        android:background="@drawable/shapelogin"
+
+        />
+</RelativeLayout>
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Click Next Button to Play Next"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+-->

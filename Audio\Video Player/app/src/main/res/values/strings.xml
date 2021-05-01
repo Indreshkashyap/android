@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Videos</string>
+    <string name="title_notifications">Music</string>
+    <string name="title_about">About</string>
+</resources>
